@@ -1,0 +1,23 @@
+
+body {
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+#banner img {
+    width: 1200px;
+}
+
+.circles {
+    margin: 20px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#wrapper {
+    text-align: center;
+}
