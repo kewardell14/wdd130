@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: grey;
+        }
+
+        #blue {
+            background: blue;
+            height: 300px;
+        }
+
+        #white {
+            background: white;
+            height: 300px;
+        }
+
+        #red {
+            background: red;
+            height: 300px;
+        }
+
+        #Chile {
+            display: grid;
+            grid-template-columns: repeat(3 1fr);
+            grid-template-rows: repeat(2 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            
+        }
+
+        #blue { grid-area: 1/1/2/2; }
+        #white { grid-area: 1/2/2/4; }
+        #red { grid-area: 2/1/3/4; }
+
+    </style>
+
+</head>
+<body>
+    
+   <!--Chile Flag-->
+ <div id="Chile">
+   <div id ="blue"></div>
+   <div id ="white"></div>
+   <div id ="red"></div>
+</div>
+</body>
+</html>
