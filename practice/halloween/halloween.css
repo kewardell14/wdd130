@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
+
+h1 {
+    font-family: "Ruslan Display";
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(orange, purple);
+    padding-block: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(4, 23, 37)
+}
+
+img {
+    padding-block: 30px;
+    padding-bottom: 70px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    text-align: center;
+    background-color: rgb(4, 23, 37);
+    border: 2px white solid;
+    padding-block: 8px;
+    border-radius: 30px;
+}
+
+h2 {
+    color:blueviolet;
+    text-align: center;
+    background-color: rgb(4, 23, 37);
+    border: 2px white solid;
+    padding-block: 8px;
+    border-radius: 30px;
+    width: 200px;
+    margin: auto;  
+}
+
+p {
+    color: orange;
+    padding-block: 20px;
+}
+
+footer {
+    color: white;
+    background-color: green;
+    padding-block: 10px;
+    text-align: left;
+}
+
+
+
