@@ -14,75 +14,53 @@
   }
 
 
+  #content {
+    max-width: 1900px;
+    margin: 0 auto;
+    /****background: white;****/
+}
+
 body {
   background-color: white;  
   margin: 0;
   padding: 0;
   font-family: "Quicksand";
+  text-align: center;
+  font-size: 22px;
 }
 
 header {
-    background-color: #3573B0;
     display: grid;
     grid-template-columns: 150px auto;
+    background-color: #3573B0;
 }
+
+.logo {
+    width: 80px;
+    margin: 15px;
+} /****NEW PIECE****/
+
+
+.logo_link {
+    justify-self: center;
+    align-self: center;
+    /*****padding-top: 5px;*****/
+}
+
+.icon {
+    width: 80px;
+    /*****padding-top: 10px;*****/
+}
+
+/*****.logo, .icon {
+    width: 80px;
+}******/
+
+/****Navigation****/
 
 nav {
     display: flex;
     justify-content: space-around;
-}
-
-nav a:hover {
-    background-color: white;
-    color: #113B51;
-}
-
-.book, .join {
-    background-color: #113B51;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.book:hover, .join:hover {
-    background-color: #9B7A59;
-    color: white;
-}
-
-.msg {
-    background-color: #3573B0;
-    padding: 35px;
-    line-height: 1.5em;
-    grid-area: 6 / 6 / 7 / 10;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-footer {
-    background-color: #C59855;
-    color: #113B51;
-    padding: 25px 50px;
-    margin-top: 200px;
-    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#background {
-    height: 725px;
-    background-color: white;
-}
-
-
-
-
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-    background: white;
 }
 
 nav a {
@@ -92,72 +70,146 @@ nav a {
     padding: 35px;
 }
 
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
+nav a:hover {
+    background-color: white;
+    color: #113B51;
+}
+
+
+/******Buttons****/
+.book, .join {
+    background-color: #113B51;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 200px;
+    /**I don't have a font family, which is different.***/
+}
+
+.book:hover, .join:hover {
+    background-color: #9B7A59;
     color: white;
 }
+
+
+/*********Images and others*******/
 
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; /***This makes things weird****/
 }
 
 #hero-box {
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1; /***This is also weird****/
 }
 
 #hero-msg {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    color: white;
+    margin-top: 100px; /***Also bad***/
 }
 
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat 10(1fr);
-}
-
-.card-img, .mountains {
+#hero-img {
     width: 100%;
 }
 
-
-.river-card {
-    grid-area: 2 / 2 / 3 / 4
-}
-
-.camping-card {
-    grid-area: 2 / 5 / 3 / 7;
-}
-
-.rapids-cards {
-    grid-area: 2 / 8 / 3 / 10;
-}
-
-#background {
-    grid-area: 4 / 1 / 9 / 11;
-}
-
-.mountains {
-    grid-area: 5 / 2 / 8 / 7;
-    width: 100%;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-
-
-.button-box {
+#hero-msg h1, #hero-msg h4 {
     text-align: center;
+    color: white;
+}
+
+.msg {
+    background-color: #3573B0;
+    line-height: 1.5em;
+    margin: 20px 0px;
+    padding: 25px;
+    color: black;
+    grid-column: 6 / 10;
+    grid-row: 6 / 7;
+    /***grid-area: 6 / 6 / 7 / 10;**/
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 25px;
+}
+
+.msg p {
+    color: white;
+    /****padding-bottom: 15px;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;****/
+    font-size: .8em;
 }
 
 main section {
     text-align: center;
-}
-
-main section img {
     box-sizing: border-box;
 }
 
+.home-grid {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: auto;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #113B51;
+    border-radius: 25px;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.mountains {
+    margin: 20px 0px;
+    border-radius: 15px;
+    width: 100%;
+    grid-column: 2 / 7;
+    grid-row: 5 / 8;
+    /**grid-area: 5 / 2 / 8 / 7;**/
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.river-card {
+    /*grid-area: 2 / 2 / 3 / 4*/
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.camping-card {
+    /*grid-area: 2 / 5 / 3 / 7;*/
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+
+.rapids-cards {
+    /*grid-area: 2 / 8 / 3 / 10;*/
+    grid-column: 8 / 10;
+    grid-row: 2 / 3;
+}
+
+#background {
+    /*height: 725px;*/
+    /***background-color: white;***/
+    /*grid-area: 4 / 1 / 9 / 11;*/
+    grid-column: 2 / 7 ;
+    grid-row: 5 / 8;
+}
+
+
+/****Texts*****/
 .home-title {
     color: #113B51;
     font-family: "Satisfy";
@@ -166,6 +218,7 @@ main section img {
 }
 
 h2 {
+    /**I don't have a color here***/
     margin: 0;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -174,16 +227,16 @@ h4 {
     color: #3573B0;
 }
 
-.msg h2 {
-    color: white;
-    font-family: "Satisfy";
-}     
-
-.msg p {
-    color: white;
-    padding-bottom: 15px;
+/****Footer***/
+footer {
+    background-color: #C59855;
+    color: #113B51;
+    margin-top: 200px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .8em;
+    align-items: center;
 }
 
 footer a {
@@ -203,41 +256,34 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-.logo, .icon {
-    width: 80px;
-}
 
-#hero-img {
+
+/****
+.card-img, .mountains {
     width: 100%;
 }
 
 
-.logo_link {
-    padding-top: 5px;
+.button-box {
+    text-align: center;
 }
 
-.icon {
-    padding-top: 10px;
+main section img {
+    box-sizing: border-box;
 }
+
+.msg h2 {
+    color: white;
+    font-family: "Satisfy";
+}   
+
+
+
 
 footer .social img {
     padding-top: 15px;
 }
 
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-.card-img {
-    border:10px solid white;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364
-}
-
-.card-img:hover {
-    opacity: .6;
-    transform: scale (1.1);
-}
 
 #logo_link {
     padding-top: 5px;
@@ -245,7 +291,7 @@ footer .social img {
     align-self: center;
 }
 
-
+*****/
 
 /*This goes at the very end of css*/
 
