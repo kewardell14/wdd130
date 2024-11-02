@@ -150,7 +150,7 @@ main section {
 }
 
 .home-grid {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(10, 1fr);
     height: auto;
 }
