@@ -42,6 +42,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  width: 400px;
+  height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Lora;
@@ -112,11 +114,12 @@ nav {
 nav  {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 
 }
 nav a {
   padding:1em;
-  min-width: 120px;
+  min-width: 50px;
   text-decoration: none;
   padding: 10px;
 
