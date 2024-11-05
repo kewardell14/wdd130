@@ -132,15 +132,14 @@ nav a:hover {
     color: black;
     grid-column: 6 / 10;
     grid-row: 6 / 7;
-    /***grid-area: 6 / 6 / 7 / 10;**/
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 25px;
 }
 
 .msg p {
     color: white;
-    /****padding-bottom: 15px;
-    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;****/
+    padding-bottom: 15px;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
     font-size: .8em;
 }
 
