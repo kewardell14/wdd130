@@ -144,6 +144,11 @@ nav a:hover {
     font-size: .8em;
 }
 
+.msg h2 {
+    color: white;
+    font-family: "Satisfy";
+}   
+
 main section {
     text-align: center;
     box-sizing: border-box;
@@ -182,7 +187,7 @@ main section {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-.river-card {
+.rivers-card {
     /*grid-area: 2 / 2 / 3 / 4*/
     grid-column: 2 / 4;
     grid-row: 2 / 3;
@@ -194,7 +199,7 @@ main section {
     grid-row: 2 / 3;
 }
 
-.rapids-cards {
+.rapids-card {
     /*grid-area: 2 / 8 / 3 / 10;*/
     grid-column: 8 / 10;
     grid-row: 2 / 3;
@@ -271,12 +276,6 @@ footer p a:hover {
 main section img {
     box-sizing: border-box;
 }
-
-.msg h2 {
-    color: white;
-    font-family: "Satisfy";
-}   
-
 
 
 
