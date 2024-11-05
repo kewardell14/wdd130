@@ -140,46 +140,44 @@ nav a:hover {
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
     ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "left left left right right right"
+    "page1 page2 page3 page4 page5 page6";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page2 {
+.Logos {
+  grid-area: page1;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.Booklets {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page3 {
+.T-Shirts {
   grid-area: page3;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page4 {
+.Yearbook-Pages {
   grid-area: page4;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page5 {
+.Posters {
   grid-area: page5;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page6 {
+.Mischelaneous {
   grid-area: page6;
-  background-color: #ccc;
-  line-height: 3em;
-}
-.sm-page7 {
-  grid-area: page7;
   background-color: #ccc;
   line-height: 3em;
 }
