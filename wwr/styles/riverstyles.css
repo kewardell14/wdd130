@@ -125,18 +125,19 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #3573B0;
+    background-color: white;
     line-height: 1.5em;
     margin: 20px 0px;
     padding: 25px;
     color: black;
-    grid-column: 6 / 10;
+    grid-column: 2 / 10;
     grid-row: 6 / 7;
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 25px;
 }
 
 .msg p {
+    background-color: #3573B0;
     color: white;
     padding-bottom: 15px;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
