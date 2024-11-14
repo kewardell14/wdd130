@@ -127,7 +127,7 @@ nav a:hover {
     padding: 25px;
     color: black;
     grid-column: 2 / 10;
-    grid-row: 6 / 7;
+    grid-row: 9 / 10;
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 25px;
 }
@@ -175,8 +175,8 @@ main section {
 
 .teamwork-card {
     /*grid-area: 2 / 2 / 3 / 4*/
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
 }
 
 .teamwork-card p {
@@ -186,14 +186,14 @@ main section {
 
 .experience-card {
     /*grid-area: 2 / 5 / 3 / 7;*/
-    grid-column: 8 / 10;
-    grid-row: 3 / 4;
+    grid-column: 6 / 10;
+    grid-row: 5 / 7;
 }
 
 .views-card {
     /*grid-area: 2 / 8 / 3 / 10;*/
     grid-column: 2 / 4;
-    grid-row: 4 / 5;
+    grid-row: 7 / 9;
 }
 
 #background {
@@ -253,35 +253,6 @@ footer p a:hover {
 }
 
 
-
-/****
-.card-img, .mountains {
-    width: 100%;
-}
-
-
-.button-box {
-    text-align: center;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-
-
-footer .social img {
-    padding-top: 15px;
-}
-
-
-#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-
-*****/
 
 /*This goes at the very end of css*/
 
