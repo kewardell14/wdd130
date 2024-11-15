@@ -1,6 +1,6 @@
 
 body {
-    background: black;
+    background: rgb(47, 47, 47);
 }
 
 .container {
@@ -41,7 +41,7 @@ body {
     padding-top: -20px;
     width: 415;
     height: auto;
-    color: gray;
+    color: rgb(97, 96, 96);
 }
 
 .footer {
@@ -62,23 +62,39 @@ body {
     text-align: center;
     align-content: center;
     color: white;
+    margin-top: -17px;
 }
+
+.read {
+    /*Stuff*/
+}
+
 
 .views, .views p {
     grid-column: 2 / 3;
     text-align: center;
     color: white;
+    margin-top: -17px;
+}
+
+.views {
+  /*Stuff*/
 }
 
 .comments, .comments p {
     grid-column: 3 / 4;
     text-align: center;
     color: white;
+    margin-top: -17px;
+}
+
+.comments {
+    /*Stuff*/
 }
 
 .footer h2 {
     /*padding-bottom: 5px;*/
-    margin: 0;
+    margin-top: -50px;
 }
 
 
