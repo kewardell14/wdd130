@@ -65,10 +65,6 @@ body {
     margin-top: -17px;
 }
 
-.read {
-    /*Stuff*/
-}
-
 
 .views, .views p {
     grid-column: 2 / 3;
@@ -77,19 +73,11 @@ body {
     margin-top: -17px;
 }
 
-.views {
-  /*Stuff*/
-}
-
 .comments, .comments p {
     grid-column: 3 / 4;
     text-align: center;
     color: white;
     margin-top: -17px;
-}
-
-.comments {
-    /*Stuff*/
 }
 
 .footer h2 {
