@@ -68,83 +68,69 @@ nav a:hover {
 }
 
 
-/******Buttons****/
-.book, .join {
-    background-color: #113B51;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 200px;
-    /**I don't have a font family, which is different.***/
-}
-
-
-.book:hover, .join:hover {
-    background-color: #9B7A59;
-    color: white;
-}
-
 
 /*********Images and others*******/
 
-#hero {
-    display: grid;
-    /*grid-template-columns: 1fr 3fr 1fr;*/
-    margin-top: -100px;
-    
-}
-
 #hero-box {
-    /*grid-column: 1/4;
-    grid-row: 1/3;*/
-    z-index: -1; 
+    position: relative;
+    z-index: 1; 
+    overflow: hidden;
 }
 
 #hero-msg {
-    /*grid-column: 2 / 3;
-    grid-row: 1 / 2;*/
     color: white;
-    margin-top: 100px;
+    margin-top: -50px;
 }
 
 #hero-img {
-    width: 100%;
+    width: 120%;
+    overflow: hidden;
+    filter: brightness(50%);
+    z-index: 0;
 }
 
-#hero-box:hover {
-    opacity: .6;
+#hero-box h1 {
+    z-index: 2;
+    text-align: center;
+    color: white;
+    position: absolute;  /* Position absolutely within the #hero-box */
+    top: 50%;  /* Position the h1 vertically in the middle (adjust as needed) */
+    left: 50%;  /* Position the h1 horizontally in the middle */
+    transform: translate(-50%, -50%);  /* This will center the h1 */
+    font-family: "Satisfy";
+    font-size: 3em;  /* Adjust size as needed */
 }
+
+
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
 }
 
-.msg {
-    background-color: white;
-    line-height: 1.5em;
-    margin: 20px 0px;
-    padding: 25px;
-    color: black;
-    /*grid-column: 2 / 10;
-    grid-row: 9 / 10;*/
-    box-shadow: 5px 5px 10px #6f7364;
-    border-radius: 25px;
-}
-
 .msg p {
     background-color: #3573B0;
     color: white;
-    padding-bottom: 15px;
+    padding: 25px;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
     font-size: .8em;
+    margin: 20px 0px;
+    line-height: 1.5em;
+    justify-items: left;
+    text-align: left;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 25px;
+    margin: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .msg h2 {
-    color: white;
+    color: #3573B0;
     font-family: "Satisfy";
+    text-align: left;
+    margin: 70px;
+    margin-bottom: -10px;
 }   
 
 main section {
@@ -226,7 +212,10 @@ main section {
     max-height: 80%; /* Makes the image take up 30% of the container's width */
     margin-left: 20px; /* Adds space between the image and the text */
     align-items: right;
-    flex-flow: column wrap;
+}
+
+.experience-card h3 {
+    color: #113B51;
 }
 
 
@@ -236,21 +225,20 @@ main section {
 }
 
 .rocks {
-    width: 100px;
+    width: 200px;
     height: auto;
-    
+    margin-bottom: 35px;
 }
 
 .paddles {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
-.experience-card .experience-card-content {
-    flex: 1; /* Ensures the text takes the remaining space */
-    font-family: "Quicksand", sans-serif;
-    color: #113B51;
+.groupedpics {
+    flex-flow: column wrap;
 }
+
 
 .experience-card-content {
     text-align: right;
@@ -319,7 +307,7 @@ h2 {
 }
 
 h4 {
-    color: #3573B0;
+    color: #113B51;;
 }
 
 /****Footer***/
