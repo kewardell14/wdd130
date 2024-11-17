@@ -93,6 +93,7 @@ nav a:hover {
     display: grid;
     /*grid-template-columns: 1fr 3fr 1fr;*/
     margin-top: -100px;
+    
 }
 
 #hero-box {
@@ -112,7 +113,7 @@ nav a:hover {
     width: 100%;
 }
 
-#hero-img:hover {
+#hero-box:hover {
     opacity: .6;
 }
 
@@ -174,22 +175,22 @@ main section {
     transform: scale(1.1);
 }
 
+
+
+/***Sections Start***/
+
 .teamwork-card {
     display: flex;
-    align-items: left; /* Aligns the items vertically */
+    align-items: center; /* Aligns the items vertically */
     justify-content: flex-start; /* Aligns the items to the left */
-    background-color: #C59855; /* Optional: box background color */
     padding: 20px;
-    border-radius: 10px; /* Optional: rounded corners */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
 }
 
 .teamwork-card img {
-    height: 80px;
-    max-width: 30%; /* Makes the image take up 30% of the container's width */
+    height: 300px;
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
     width: auto;
     margin-right: 20px; /* Adds space between the image and the text */
-    border-radius: 10px; /* Optional: rounds the corners of the image */
 }
 
 .teamwork-card .teamwork-card-content {
@@ -198,40 +199,109 @@ main section {
     color: #113B51;
 }
 
+.teamwork-card-content {
+    text-align: left;
+}
 
-/*-----.teamwork-card {
-    width: 50%;
-    height: auto;
-/*--    flex-direction: row;
-}*/
+.teamwork-card-content p {
+    font-size: small;
+}
 
-/*-----.teamwork-card p {
-    background: yellow;
-}*/
+.teamwork-card-content h5 {
+    margin-top: -20px;
+    color: #9B7A59;
+}
+
+
 
 .experience-card {
-    /*grid-column: 6 / 10;
-    grid-row: 5 / 7;*/
-    width: 30%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the items vertically */
+    align-items: center; /* Aligns the items to the center */
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.experience-card img {
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
+    margin-left: 20px; /* Adds space between the image and the text */
+    align-items: right;
+    flex-flow: column wrap;
+}
+
+
+.waterfall {
+    width: 300px;
     height: auto;
 }
+
+.rocks {
+    width: 100px;
+    height: auto;
+    
+}
+
+.paddles {
+    width: 100px;
+    height: auto;
+}
+
+.experience-card .experience-card-content {
+    flex: 1; /* Ensures the text takes the remaining space */
+    font-family: "Quicksand", sans-serif;
+    color: #113B51;
+}
+
+.experience-card-content {
+    text-align: right;
+}
+
+.experience-card-content p {
+    font-size: small;
+}
+
+.experience-card-content h5 {
+    margin-top: -20px;
+    color: #9B7A59;
+}
+
+
 
 .views-card {
-    /*grid-area: 2 / 8 / 3 / 10;*/
-    /*grid-column: 2 / 6;
-    grid-row: 7 / 9;*/
-    width: 40%;
-    height: auto;
+    display: flex;
+    align-items: left; /* Aligns the items vertically */
+    justify-content: flex-start; /* Aligns the items to the left */
+    padding: 20px;
 }
 
-#background {
-    /*height: 725px;*/
-    /***background-color: white;***/
-    /*grid-area: 4 / 1 / 9 / 11;*/
-    /*grid-column: 2 / 7 ;
-    grid-row: 5 / 8;*/
-    background: yellow;
+.views-card img {
+    height: 500px;
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
+    width: auto;
+    margin-right: 20px; /* Adds space between the image and the text */
 }
+
+.views-card .views-card-content {
+    flex: 1; /* Ensures the text takes the remaining space */
+    font-family: "Quicksand", sans-serif;
+    color: #113B51;
+}
+
+.views-card-content p {
+    font-size: small;
+}
+
+.views-card-content {
+    text-align: left;
+}
+
+.views-card-content h5 {
+    margin-top: -20px;
+    color: #9B7A59;
+}
+
+
+/****Sections end***/
 
 
 /****Texts*****/
