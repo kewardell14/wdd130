@@ -174,7 +174,7 @@ main section {
 
 .teamwork-card img {
     height: 600px;
-    max-height: 100%;
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
     width: auto;
     margin-right: 30px; /* Adds space between the image and the text */
 }
@@ -190,7 +190,7 @@ main section {
 }
 
 .teamwork-card-content p {
-    font-size: small;
+    font-size: medium;
 }
 
 .teamwork-card-content h5 {
@@ -209,7 +209,7 @@ main section {
 }
 
 .experience-card img {
-    max-height: 100%;
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
     margin-left: 30px; /* Adds space between the image and the text */
     align-items: right;
 }
@@ -245,7 +245,7 @@ main section {
 }
 
 .experience-card-content p {
-    font-size: small;
+    font-size: medium;
 }
 
 .experience-card-content h5 {
@@ -264,7 +264,7 @@ main section {
 
 .views-card img {
     height: 700px;
-    max-height: 100%; 
+    max-height: 80%; /* Makes the image take up 30% of the container's width */
     width: auto;
     margin-right: 30px; /* Adds space between the image and the text */
 }
@@ -276,7 +276,7 @@ main section {
 }
 
 .views-card-content p {
-    font-size: small;
+    font-size: medium;
 }
 
 .views-card-content {
