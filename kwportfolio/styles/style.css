@@ -1,0 +1,45 @@
+
+
+
+/***********Bio*******/
+/*
+.bio {
+    margin: 20px 0px;
+    border-radius: 15px;
+    width: 100%;
+    grid-column: 2 / 7;
+    grid-row: 5 / 8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
+    background-color: #3573B0;
+    line-height: 1.5em;
+    margin: 20px 0px;
+    padding: 25px;
+    color: black;
+    grid-column: 6 / 10;
+    grid-row: 6 / 7;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 25px;
+}
+
+.msg p {
+    color: white;
+    padding-bottom: 15px;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+}
+
+.msg h2 {
+    color: white;
+    font-family: "Satisfy";
+}   
+
+
+.bio, .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+    */

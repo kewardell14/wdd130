@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="formteststyle.css">
     <title>Document</title>
+    <script>
+        function handleSubmit(event)
+        {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+
+            alert('First Name: ${firstName}');
+        }
+    </script>
 </head>
 <body>
     <!--Collect their first name, last name, email, phone number, gender, subscribe, updates, dropdown music genre, and submit-->
-    <form>
+    <h1>Christmas Form</h1>
+    <form onsubmit="handleSubmit(event)">
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" name="firstName" required>
         <br><br>
@@ -31,13 +43,14 @@
         <label for="updates">Be informed of updates</label>
         <input type="checkbox" id="updates" name="updates"> 
         <br><br>
-        <label for="genre">Favorite Music Genre</label>
+        <label for="genre">Favorite Christmas Movie</label>
         <select id="genre" name="genre">
             <option value="">Select an Option</option>
-            <option value="Rock">Rock n Roll</option>
-            <option value="Pop">Pop Music</option>
-            <option value="Jazz">Jazz Music</option>
-            <option value="Classical">Classical Music</option>
+            <option value="Home Alone">Home Alone</option>
+            <option value="Elf">Elf</option>
+            <option value="A Chirstmas Carol">A Christmas Carol</option>
+            <option value="The Polar Express">The Polar Express</option>
+            <option value="The Grinch">The Grinch</option>
         </select>
         <br><br>
         <button type="submit">Submit Form</button>
