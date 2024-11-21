@@ -3,7 +3,7 @@
 
 /***********Bio*******/
 /*
-.bio {
+.profile {
     margin: 20px 0px;
     border-radius: 15px;
     width: 100%;
@@ -37,7 +37,7 @@
 }   
 
 
-.bio, .msg {
+.profile, .msg {
     width: 80%;
     display: block;
     margin: 0 auto;
