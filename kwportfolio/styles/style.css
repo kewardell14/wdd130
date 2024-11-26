@@ -1,23 +1,73 @@
+/******Colors
+  --primary-color: #153243; blue
+  --secondary-color: #AF3E4D; pink
+  --accent1-color: #788BFF;
+  --accent2-color: #B4B8AB;
+  --accent3-color: #CB8CF2;
+  --accent4-color: white;
+  *****/
 
 
+
+/*****Navigation*****/
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    background-color: white;
+    box-shadow: 10px; /*Haven't figured out how to make this work*/
+}
+
+.logo {
+    width: 250px; /*Controls image size*/
+    margin: 20px;
+} /****NEW PIECE****/
+
+
+.logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #153243;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #788BFF;
+    color: white;
+}
+
+
+/********************************/
 
 /***********Bio*******/
-/*
+
 .profile {
     margin: 20px 0px;
     border-radius: 15px;
     width: 100%;
     grid-column: 2 / 7;
-    grid-row: 5 / 8;
+    grid-row: 6 / 8;
     box-shadow: 5px 5px 10px #6f7364;
+    z-index: -1;
 }
 
 .msg {
-    background-color: #3573B0;
+    background-color: white;
     line-height: 1.5em;
     margin: 20px 0px;
     padding: 25px;
-    color: black;
+    /*color: black; not necessary, I believe.*/
     grid-column: 6 / 10;
     grid-row: 6 / 7;
     box-shadow: 5px 5px 10px #6f7364;
@@ -25,21 +75,37 @@
 }
 
 .msg p {
-    color: white;
+    color: #153243;
     padding-bottom: 15px;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
     font-size: .8em;
 }
 
 .msg h2 {
-    color: white;
+    color: #AF3E4D;
     font-family: "Satisfy";
 }   
 
 
 .profile, .msg {
-    width: 80%;
+    width: 50%; /*Controls how large the things appear*/
     display: block;
     margin: 0 auto;
 }
-    */
+
+
+
+
+
+
+
+
+/*body {
+    display: grid;
+    grid-template-columns: 10;
+}
+
+.msg {
+    grid-column: 5 / 10;
+}*/
+
