@@ -97,15 +97,82 @@ nav a:hover {
 
 
 
-
-
-
-/*body {
+#gallery {
     display: grid;
-    grid-template-columns: 10;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    padding: 100px;
+
+    /*display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+    padding: 50px;*/
+    
 }
 
-.msg {
-    grid-column: 5 / 10;
-}*/
+.grid-item {
+    width: 100%;  /* Ensure items take full width of their grid cell */
+    height: 100%; /* Ensure items take full height of their grid cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: Add a border to the grid items */
+    position: relative;
+}
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    /*z-index: -1;*/
+    object-fit: cover;
+    
+}
+
+#gallery img:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+footer {
+    background-color: #B4B8AB;
+    color: #113B51;
+    margin-top: 200px;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+footer a {
+    color: #113B51;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 20px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    width: 20px;
+    height: auto;
+}
+
+
+
 
