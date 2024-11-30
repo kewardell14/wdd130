@@ -16,6 +16,7 @@ header {
     grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
     background-color: white;
     box-shadow: 10px; /*Haven't figured out how to make this work*/
+    margin-bottom: 50px;
 }
 
 .logo {
@@ -33,6 +34,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
@@ -68,7 +70,7 @@ nav a:hover {
     margin: 20px 0px;
     padding: 25px;
     /*color: black; not necessary, I believe.*/
-    grid-column: 6 / 10;
+    grid-column: 5 / 10;
     grid-row: 6 / 7;
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 25px;
@@ -117,7 +119,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc; /* Optional: Add a border to the grid items */
+    /*border: 1px solid #ccc;*/ /* Optional: Add a border to the grid items */
     position: relative;
 }
 
