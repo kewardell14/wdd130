@@ -151,7 +151,7 @@ footer {
     background-color: #B4B8AB;
     color: #113B51;
     margin-top: 200px;
-    padding: 25px 50px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-around;
     font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
@@ -189,6 +189,7 @@ footer p a:hover {
     text-decoration: none;
     background: #007bb5;
     color: white;
+    margin-right: 20px;
   }
 
 
