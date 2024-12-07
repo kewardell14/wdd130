@@ -1,0 +1,33 @@
+
+h1 {
+    font-family: Lora, Verdana, Geneva, Tahoma, sans-serif;
+    color:#AF3E4D;
+}
+
+form {
+    color:#153243;
+    background-color:white;
+    padding: 30px;
+    border-radius: 30px;
+    border:#153243 dotted 3px;
+
+}
+
+input {
+    background-color: #AF3E4D;
+    color: white;
+}
+
+label {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+button {
+    background-color: #AF3E4D;
+    color: white;
+}
+
+body {
+    margin: 50px;
+}

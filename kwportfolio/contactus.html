@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contactusstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <script>
+        function handleSubmit(event)
+        {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+
+            alert('First Name: ${firstName}');
+        }
+    </script>
+</head>
+<body>
+    <!--Collect their first name, last name, email, phone number, gender, subscribe, updates, dropdown music genre, and submit-->
+    <h1>Contact Me</h1>
+    <form onsubmit="handleSubmit(event)">
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br><br>
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="lastName" required>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="country">Country: </label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="mexico">Mexico</option>
+        </select>
+        <br>
+        <br>
+        <label for="subject">Subject:<br></label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <br><br>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
