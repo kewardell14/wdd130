@@ -84,8 +84,8 @@ h1 {
 }
 
 .hamlettype img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     gap: 20px;
 }
 
@@ -94,8 +94,8 @@ h1 {
 }
 
 .hamletimage img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     gap: 20px;
 }
 
@@ -118,8 +118,8 @@ h1 {
 }
 
 .GCintro img {
-    width: 50%;
-    height: 50%;
+    width: 200%;
+    height: 200%;
 }
 
 .GCintro p {
