@@ -1,0 +1,207 @@
+/******Colors
+  --primary-color: #153243; blue
+  --secondary-color: #AF3E4D; pink
+  --accent1-color: #788BFF;
+  --accent2-color: #B4B8AB;
+  --accent3-color: #CB8CF2;
+  --accent4-color: white;
+  *****/
+
+
+
+/*****Navigation*****/
+
+header {
+    display: grid;
+    grid-template-columns: 300px auto; /*Controls the relationship between the columns for the logo and the rest of the nav. Creates spacing between the logo and nav.*/
+    background-color: white;
+    box-shadow: 10px; /*Haven't figured out how to make this work*/
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 250px; /*Controls image size*/
+    margin: 20px;
+} /****NEW PIECE****/
+
+
+.logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: #153243;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #788BFF;
+    color: white;
+}
+
+
+/********************************/
+
+#Hamlet {
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    color:#153243;
+    font-family: "Lora";
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.hamlettitle h1 {
+    text-align: center;
+    align-items: center;
+    color:#153243;
+    font-family: "Lora";
+    margin: 30px;
+}
+
+.hamlettitle p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hamlettype {
+    display: inline-flex;
+}
+
+.hamlettype img {
+    width: 30%;
+    height: 30%;
+    gap: 20px;
+}
+
+.hamletimage {
+    display: inline-flex;
+}
+
+.hamletimage img {
+    width: 30%;
+    height: 30%;
+    gap: 20px;
+}
+
+.hamlettype p {
+    margin: 20px;
+}
+
+.hamletimage p {
+    margin: 20px;
+}
+
+
+#GC {
+    margin: 50px;
+    margin-top: 50px;
+}
+
+.GCintro {
+    display: inline-flex;
+}
+
+.GCintro img {
+    width: 50%;
+    height: 50%;
+}
+
+.GCintro p {
+    margin: 20px;
+}
+
+.GCgallery {
+    grid-template-columns: 6;
+    grid-template-rows: 2;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.GCgallery img {
+    width: 30%;
+    height: 30%;
+    align-content: center;
+}
+
+
+
+#Logos {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    /*row-gap: 10px;*/
+    column-gap: 70px;
+}
+
+
+
+
+
+
+/***********Footer*******/
+
+footer {
+    background-color: #B4B8AB;
+    color: #113B51;
+    margin-top: 200px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+footer a {
+    color: #113B51;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 20px;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    width: 10px;
+    height: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+    margin-right: 20px;
+  }
+
+
+
+
+
