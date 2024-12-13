@@ -164,6 +164,12 @@ h1 {
 
 
 
+
+
+
+/***********Footer***********/
+
+
 footer {
     background-color: #B4B8AB;
     color: #113B51;
@@ -194,7 +200,6 @@ footer p a:hover {
 }
 
 .social {
-    width: 10px;
     height: auto;
 }
 

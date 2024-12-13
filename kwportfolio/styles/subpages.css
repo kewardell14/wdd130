@@ -49,8 +49,95 @@ nav a:hover {
     color: white;
 }
 
+/****************Logo Style****************/
 
-/********************************/
+#Logos {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 70px;
+}
+
+.archery {
+    grid-column: 2 / 6;
+    grid-row: 1 / 5;
+}
+
+.archery img{
+    display: flex;
+    width: 80%;
+    height: auto;
+}
+
+.khsdistrict {
+    grid-column: 6 / 10;
+    grid-row: 1 / 5;
+}
+
+.khsdistrict .khsdistrict-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.khsdistrict .khsdistrict-images img {
+    width: 100%;
+    height: auto;
+}
+
+.etsy {
+    grid-column: 2 / 6;
+    grid-row: 6 / 10;
+}
+
+.etsy img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.etsy .etsycontent-container {
+    display: flex;
+}
+
+.etsy .etsytext-container {
+    gap: 10px;
+}
+
+.etsy .etsycontent-container img {
+    width: 50%;
+    height: 50%;
+}
+
+.khssoftware {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 6 / 10;
+    grid-row: 6 / 10;
+    column-gap: 20px; /* Gives me a gap between columns I think*/
+}
+
+.khssoftware .khssoftwareimage-container {
+    grid-column: 1 / 3;
+}
+
+.khssoftware .khssoftwareimage-container img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.khssoftware .khssoftwaretext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 3;
+}
+
+
+
+
+/****************Booklet style****************/
 
 #Hamlet {
     margin: 50px;
@@ -86,7 +173,7 @@ h1 {
 .hamlettype img {
     width: 100%;
     height: 100%;
-    gap: 20px;
+    padding: 20px;
 }
 
 .hamletimage {
@@ -96,7 +183,7 @@ h1 {
 .hamletimage img {
     width: 100%;
     height: 100%;
-    gap: 20px;
+    padding: 20px;
 }
 
 .hamlettype p {
@@ -141,16 +228,19 @@ h1 {
 
 
 
-#Logos {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    /*row-gap: 10px;*/
-    column-gap: 70px;
-}
+/****************T-shirt style****************/
 
 
 
+/****************Yearbook style****************/
+
+
+
+/****************Posters style****************/
+
+
+
+/****************Miscellaneous style****************/
 
 
 
@@ -186,7 +276,6 @@ footer p a:hover {
 }
 
 .social {
-    width: 10px;
     height: auto;
 }
 
