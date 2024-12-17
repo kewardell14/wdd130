@@ -49,6 +49,7 @@ nav a:hover {
     color: white;
 }
 
+
 /****************Logo Style****************/
 
 #Logos {
@@ -230,14 +231,90 @@ h1 {
 
 /****************T-shirt style****************/
 
+#nhs {
+    display: inline-flex;
+}
+
+.nhstext {
+    text-align: left;
+    padding: 20px;
+}
+
+#nhs img  {
+    width: 50%;
+    height: 50%;
+}
+
+
+#byui {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+#byui img {
+    width: 80%;
+    width: 80%;
+}
+
+.byuitext {
+    align-items: left;
+    align-content: left;
+    text-align: left;
+    padding: 20px;
+}
 
 
 /****************Yearbook style****************/
 
+#dand {
+    display: inline-flex;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+
+
+#stronger {
+    display: inline-flex;
+    margin-top: 100px;
+}
+
+.dtext {
+    padding: 30px;
+}
+
+.strongertext {
+    padding: 30px;
+}
 
 
 /****************Posters style****************/
 
+#content {
+    display: inline-flex;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.actype img {
+    width: 100%;     
+    height: auto;   
+}
+
+.bradburythompson img {
+    width: 180%;     
+    height: auto; 
+}
+
+.bradburythompson {
+    margin-right: 400px;
+}
 
 
 /****************Miscellaneous style****************/
