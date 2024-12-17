@@ -294,12 +294,13 @@ img {
 /****************Posters style****************/
 
 #content {
-    display: inline-flex;
     grid-template-columns: 2;
     grid-template-rows: 1;
     margin: 50px;
-    align-items: center;
-    text-align: center;
+}
+
+.acimages {
+    display: inline-flex;
 }
 
 .actype img {
@@ -312,9 +313,7 @@ img {
     height: auto; 
 }
 
-.bradburythompson {
-    margin-right: 400px;
-}
+
 
 
 /****************Miscellaneous style****************/
