@@ -242,7 +242,7 @@ h1 {
 
 #nhs img  {
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 
@@ -253,7 +253,7 @@ h1 {
 
 #byui img {
     width: 80%;
-    width: 80%;
+    height: auto
 }
 
 .byuitext {
@@ -272,7 +272,7 @@ h1 {
 
 img {
     width: 80%;
-    height: 80%;
+    height: auto;
 }
 
 
@@ -318,6 +318,93 @@ img {
 
 /****************Miscellaneous style****************/
 
+#mbody {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, auto);
+}
+
+
+#businesscard {
+    grid-column: 1 / 10;
+    grid-row: 1 / 5;
+    display: flex;
+    margin: 50px;
+    margin-top: -20px;
+}
+
+.bctext {
+    margin-left: 50px;
+}
+
+.bcimages {
+    display: inline-flex;
+    grid-column: 1 / 8;
+    gap: 10px;
+}
+
+.lastimage {
+    height: 250px;
+    width: auto;
+}
+
+.lastimage img {
+    height: 250px;
+    width: auto;
+}
+
+.first-two-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align the two images vertically */
+    width: auto;
+    height: 500px;
+    margin: 20px;
+}
+
+.first-two-images img {
+    height: 500px;
+    width: auto;
+}
+
+
+
+#wedding {
+    grid-column: 1 / 5;
+    grid-row: 6 / 10;
+    display: inline-flex;
+}
+
+.weddingimage img {
+    height: 600px;
+    width: auto;
+}
+
+.weddingtext {
+    margin: 20px;
+
+}
+
+
+#playingcard {
+    grid-column: 6 / 10;
+    grid-row: 6 / 10;
+    text-align: center;
+}
+
+.psychimages {
+    display: inline-flex;
+    align-items: center;
+}
+
+.psychimages img {
+    height: 400px;
+    width: auto;
+}
+
+.psychtext {
+    margin-top: -50px;
+}
 
 
 /***********Footer*******/
